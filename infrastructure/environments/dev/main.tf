@@ -52,6 +52,9 @@ module "ecs_cluster" {
   key_name       = var.key_name
   tags           = var.tags
   target_port    = var.target_port
+  db_name        = var.db_name
+  username       = var.username
+  password       = var.password
 
   alb_ec2_security_group  = module.alb.alb_ec2_security_group
   alb_arn                 = module.alb.alb_arn
