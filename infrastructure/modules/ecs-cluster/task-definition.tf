@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "this" {
 
   container_definitions = jsonencode([
     {
-      name      = "ecs-task-definition-${var.container_name}"
+      name      = var.container_name
       image     = var.docker_image
       essential = true
       portMappings = [
@@ -21,15 +21,15 @@ resource "aws_ecs_task_definition" "this" {
       environment = [
         {
           name  = "POSTGRES_USER"
-          value = "grocery_user"
+          value = var.username
         },
         {
           name  = "POSTGRES_PASSWORD"
-          value = "grocery_test"
+          value = var.password
         },
         {
           name  = "POSTGRES_DB"
-          value = "grocerymate_db"
+          value = var.db_name
         },
         {
           name  = "POSTGRES_HOST"
@@ -37,7 +37,7 @@ resource "aws_ecs_task_definition" "this" {
         },
         {
           name  = "POSTGRES_URI"
-          value = "postgresql://grocery_user:grocery_test@${var.db_endpoint}:5432/grocerymate_db"
+          value = "postgresql://${var.username}:${var.password}@${var.db_endpoint}:5432/${var.db_name}"
         }
       ]
       logConfiguration = {
