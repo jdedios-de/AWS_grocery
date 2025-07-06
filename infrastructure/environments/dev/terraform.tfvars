@@ -1,16 +1,18 @@
 cidr_block = "10.0.0.0/16"
 
+environment  = "dev"
 subnet_count = 2
-
 azs = [
   "eu-central-1a",
   "eu-central-1b",
 ]
+tags = {
+  Project     = "grocery-app"
+  Environment = "dev"
+}
 
-environment = "dev"
 
 # Database
-
 db_name        = "grocerymate_db"
 username       = "grocery_user"
 password       = "grocery_test"
@@ -28,14 +30,12 @@ target_port           = 5000
 
 
 # EC2
-instance_type = "t2.micro"
-instance_name = "grocery-app"
-cluster_name  = "grocery-app-ecs-cluster"
-min_size      = 2
-max_size      = 2
-desired_count = 3
+instance_type  = "t2.micro"
+instance_name  = "grocery-app"
+cluster_name   = "grocery-app-ecs-cluster"
+container_name = "grocery-app"
+key_name       = "jerome-aws-frankfurt"
+min_size       = 2
+max_size       = 3
+desired_count  = 2
 
-tags = {
-  Project     = "grocery-app"
-  Environment = "dev"
-}

@@ -7,3 +7,13 @@ variable "db_name" { type = string }
 variable "username" { type = string }
 variable "password" { type = string }
 variable "environment" { type = string }
+
+
+variable "vpc_security_group_ids" {
+  type        = list(string)
+}
+
+variable "private_subnets" {
+  description = "List of public subnet IDs to associate with the ALB"
+  type        = list(string)
+}

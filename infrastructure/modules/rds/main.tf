@@ -1,6 +1,6 @@
 resource "aws_db_subnet_group" "this" {
   name       = "${var.environment}-db-subnet-group"
-  subnet_ids = [for subnet in aws_subnet.private : subnet.id]
+  subnet_ids = var.private_subnets
 }
 
 resource "aws_db_instance" "this" {
@@ -10,7 +10,7 @@ resource "aws_db_instance" "this" {
   engine                 = var.engine
   engine_version         = var.eng_version
   instance_class         = var.instance_class
-  name                   = var.db_name
+  db_name                = var.db_name
   username               = var.username
   password               = var.password
   db_subnet_group_name   = aws_db_subnet_group.this.name
