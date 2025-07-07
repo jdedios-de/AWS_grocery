@@ -27,13 +27,13 @@ module "alb" {
   health_check_matcher  = var.health_check_matcher
   health_check_interval = var.health_check_interval
 
-  health_check_healthy_threshold    = var.health_check_healthy_threshold
-  health_check_unhealthy_threshold  = var.health_check_unhealthy_threshold
-  health_check_timeout              = var.health_check_timeout
+  health_check_healthy_threshold   = var.health_check_healthy_threshold
+  health_check_unhealthy_threshold = var.health_check_unhealthy_threshold
+  health_check_timeout             = var.health_check_timeout
 
 
-  subnet_count          = var.subnet_count
-  tags                  = var.tags
+  subnet_count = var.subnet_count
+  tags         = var.tags
 }
 
 module "global" {
