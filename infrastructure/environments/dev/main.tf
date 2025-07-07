@@ -26,6 +26,7 @@ module "alb" {
   health_check_path     = var.health_check_path
   health_check_matcher  = var.health_check_matcher
   health_check_interval = var.health_check_interval
+
   subnet_count          = var.subnet_count
   tags                  = var.tags
 }

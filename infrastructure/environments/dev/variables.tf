@@ -48,7 +48,6 @@ variable "health_check_matcher" { type = string }
 variable "health_check_interval" { type = number }
 
 
-
 variable "cluster_name" { type = string }
 variable "instance_type" { type = string }
 variable "instance_name" { type = string }
