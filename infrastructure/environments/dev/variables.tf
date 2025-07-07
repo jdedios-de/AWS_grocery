@@ -47,6 +47,9 @@ variable "health_check_path" { type = string }
 variable "health_check_matcher" { type = string }
 variable "health_check_interval" { type = number }
 
+variable "health_check_healthy_threshold" { type = number}
+variable "health_check_unhealthy_threshold" { type = number}
+variable "health_check_timeout" { type = number}
 
 variable "cluster_name" { type = string }
 variable "instance_type" { type = string }
