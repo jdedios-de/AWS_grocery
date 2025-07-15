@@ -38,6 +38,18 @@ resource "aws_ecs_task_definition" "this" {
         {
           name  = "POSTGRES_URI"
           value = "postgresql://${var.username}:${var.password}@${var.db_endpoint}:5432/${var.db_name}"
+        },
+        {
+          name  = "S3_BUCKET_NAME"
+          value = var.bucket_name
+        },
+        {
+          name  = "S3_REGION"
+          value = "eu-central-1"
+        },
+        {
+          name  = "USE_S3_STORAGE"
+          value = "true"
         }
       ]
       logConfiguration = {
