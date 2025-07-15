@@ -44,3 +44,6 @@ min_size       = 2
 max_size       = 3
 desired_count  = 2
 
+# S3
+bucket_name = "j-grocerymate-avatars"
+folder_name = "avatars"

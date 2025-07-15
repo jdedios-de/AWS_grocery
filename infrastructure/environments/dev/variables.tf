@@ -60,6 +60,8 @@ variable "desired_count" { type = number }
 variable "container_name" { type = string }
 variable "key_name" { type = string }
 
+variable "bucket_name" { type = string }
+variable "folder_name" { type = string }
 
 variable "docker_image" {
   default = "995757496625.dkr.ecr.eu-central-1.amazonaws.com/grocerymate:latest"

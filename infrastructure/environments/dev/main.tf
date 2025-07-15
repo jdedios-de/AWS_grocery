@@ -39,6 +39,7 @@ module "alb" {
 module "global" {
   source = "../../global"
   region = var.region
+  s3_bucket = module.s3.s3_bucket
 }
 
 # ECS Cluster + ASG
@@ -56,7 +57,6 @@ module "ecs_cluster" {
   docker_image   = var.docker_image
   container_name = var.container_name
   key_name       = var.key_name
-  tags           = var.tags
   target_port    = var.target_port
   db_name        = var.db_name
   username       = var.username
@@ -68,6 +68,7 @@ module "ecs_cluster" {
   instance_profile_name   = module.global.ecs_instance_profile_name
   ecs_task_execution_role = module.global.ecs_task_execution_role
   db_endpoint             = module.rds.db_endpoint
+  tags                    = var.tags
 }
 
 # RDS
@@ -84,6 +85,16 @@ module "rds" {
   alloc_storage          = var.alloc_storage
   engine                 = var.engine
   private_subnets        = module.vpc.private_subnets
+  tags                   = var.tags
+}
+
+# S3
+module "s3" {
+  source                 = "../../modules/s3"
+  bucket_name            = var.bucket_name
+  folder_name            = var.folder_name
+  environment            = var.environment
+  tags                   = var.tags
 }
 
 

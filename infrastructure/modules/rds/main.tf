@@ -16,4 +16,8 @@ resource "aws_db_instance" "this" {
   db_subnet_group_name   = aws_db_subnet_group.this.name
   vpc_security_group_ids = var.vpc_security_group_ids
   skip_final_snapshot    = true
+
+  tags = merge(var.tags, {
+    Name        = "${var.environment}-rds"
+  })
 }

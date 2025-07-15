@@ -17,3 +17,5 @@ variable "private_subnets" {
   description = "List of public subnet IDs to associate with the ALB"
   type        = list(string)
 }
+
+variable "tags" { type = map(string) }
