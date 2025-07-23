@@ -42,6 +42,8 @@ This project is part of the Cloud Track in our Masterschool Software Engineering
 
 ![alt text](image.png)
 
+---
+
 ## 🔧 Prerequisites
 Terraform ≥ 1.0.0
 
@@ -50,3 +52,13 @@ AWS CLI
 Docker (for local backend builds)
 
 ### [![Watch - Prerequisites](https://www.youtube.com/watch?v=Radpgqt2tQQ)](https://www.youtube.com/watch?v=Radpgqt2tQQ)
+
+---
+## 🚀 Getting Started
+
+1. Clone the repository
+2. Set up Terraform remote state
+3. Configure AWS credentials
+4. Set up Docker with ECR
+
+### [![Watch - Getting Started](https://www.youtube.com/watch?v=ALv_n0ZYWls)](https://www.youtube.com/watch?v=ALv_n0ZYWls)
