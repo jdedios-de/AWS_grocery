@@ -5,4 +5,3 @@ frontend/src/config.js~
 venv/
 .terraform*
 *tfstate*
-*temp*
