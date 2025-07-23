@@ -16,17 +16,18 @@
 2. [Architecture](#-architecture)  
 3. [Repository Structure](#-repository-structure)  
 4. [Prerequisites](#-prerequisites)  
-5. [Getting Started](#-getting-started)  
-6. [Terraform Workflow](#-terraform-workflow)  
+5. [Getting Started](#-getting-started)
+6. [Terraform Configuration](#-terraform-configuration)  
+7. [Terraform Workflow](#-terraform-workflow)  
    - [Backend Configuration](#backend-configuration)  
    - [Initializing & Applying](#initializing--applying)  
-7. [Backend (API)](#-backend-api)  
-8. [Frontend (Web)](#-frontend-web)  
-9. [Environment Variables](#-environment-variables)  
-10. [Testing](#-testing)  
-11. [Deployment](#-deployment)  
-12. [Contributing](#-contributing)  
-13. [License](#-license)  
+8. [Backend (API)](#-backend-api)  
+9. [Frontend (Web)](#-frontend-web)  
+10. [Environment Variables](#-environment-variables)  
+11. [Testing](#-testing)  
+12. [Deployment](#-deployment)  
+13. [Contributing](#-contributing)  
+14. [License](#-license)  
 
 ---
 
@@ -62,3 +63,69 @@ Docker (for local backend builds)
 4. Set up Docker with ECR
 
 ### [![Watch - Getting Started](https://www.youtube.com/watch?v=ALv_n0ZYWls)](https://www.youtube.com/watch?v=ALv_n0ZYWls)
+
+---
+
+## 🚀 Terraform Configuration
+
+```bash
+infrastructure
+├── scripts
+├── environments
+│   ├── prod
+│   ├── staging
+│   └── dev
+│       ├── backend.tf
+│       ├── terraform.tfvars
+│       ├── variables.tf
+│       ├── terraform.tfstate.backup
+│       ├── terraform.tfstate
+│       └── main.tf
+├── modules
+│   ├── rds
+│   │   ├── outputs.tf
+│   │   ├── variables.tf
+│   │   ├── main.tf
+│   │   └── README.md
+│   ├── alb
+│   │   ├── outputs.tf
+│   │   ├── ec2-security-group.tf
+│   │   ├── internet-gateway.tf
+│   │   ├── route-table.tf
+│   │   ├── listener.tf
+│   │   ├── rds-security-group.tf
+│   │   ├── alb-security-group.tf
+│   │   ├── variables.tf
+│   │   ├── main.tf
+│   │   └── README.md
+│   ├── vpc
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── public.tf
+│   │   ├── private.tf
+│   │   ├── main.tf
+│   │   └── README.md
+│   ├── ecs-cluster
+│   │   ├── outputs.tf
+│   │   ├── lb-listener.tf
+│   │   ├── main.tf
+│   │   ├── launch-template.tf
+│   │   ├── ecs-service.tf
+│   │   ├── auto-scaling-group.tf
+│   │   ├── variables.tf
+│   │   ├── task-definition.tf
+│   │   └── README.md
+│   └── s3
+│       ├── variables.tf
+│       ├── outputs.tf
+│       ├── main.tf
+│       └── README.md
+└── global
+    ├── providers.tf
+    ├── versions.tf
+    ├── backend.tf
+    ├── outputs.tf
+    ├── variables.tf
+    ├── iam.tf
+    └── README.md
+```
