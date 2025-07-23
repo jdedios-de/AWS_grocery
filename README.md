@@ -5,8 +5,9 @@
 # AWS Grocery Infra
 
 > Terraform-managed AWS infrastructure for the Grocery App  
-> Includes backend API, frontend web app, and remote state configuration
+> Includes backend API and frontend web app
 
+### [![Watch - Introduction](https://www.youtube.com/watch?v=inNKmnGBUtw)](https://www.youtube.com/watch?v=inNKmnGBUtw)
 ---
 
 ## 📖 Table of Contents
@@ -41,4 +42,11 @@ This project is part of the Cloud Track in our Masterschool Software Engineering
 
 ![alt text](image.png)
 
+## 🔧 Prerequisites
+Terraform ≥ 1.0.0
 
+AWS CLI
+
+Docker (for local backend builds)
+
+### [![Watch - Prerequisites](https://www.youtube.com/watch?v=Radpgqt2tQQ)](https://www.youtube.com/watch?v=Radpgqt2tQQ)
