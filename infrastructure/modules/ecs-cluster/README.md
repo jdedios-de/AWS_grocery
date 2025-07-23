@@ -66,7 +66,7 @@ module "ecs_cluster" {
   db_endpoint            = module.rds.db_endpoint
   alb_arn                = module.alb.alb_arn
   target_group_arn       = module.alb.target_group_arn
-  docker_image           = "myregistry/grocerymate:latest"
+  docker_image           = "995757496625.dkr.ecr.eu-central-1.amazonaws.com/grocerymate:latest"
   container_name         = "grocerymate"
   key_name               = "jerome-aws-frankfurt"
   db_name                = "grocerymate_db"
