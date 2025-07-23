@@ -5,6 +5,13 @@ provider "aws" {
   region = var.region
 }
 
+# Global
+module "global" {
+  source = "../../global"
+  region = var.region
+  s3_bucket = module.s3.s3_bucket
+}
+
 
 # VPC
 module "vpc" {
@@ -34,12 +41,6 @@ module "alb" {
 
   subnet_count = var.subnet_count
   tags         = var.tags
-}
-
-module "global" {
-  source = "../../global"
-  region = var.region
-  s3_bucket = module.s3.s3_bucket
 }
 
 # ECS Cluster + ASG
