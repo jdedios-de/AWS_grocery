@@ -18,16 +18,9 @@
 4. [Prerequisites](#-prerequisites)  
 5. [Getting Started](#-getting-started)
 6. [Terraform Configuration](#-terraform-configuration)  
-7. [Terraform Workflow](#-terraform-workflow)  
-   - [Backend Configuration](#backend-configuration)  
-   - [Initializing & Applying](#initializing--applying)  
-8. [Backend (API)](#-backend-api)  
-9. [Frontend (Web)](#-frontend-web)  
-10. [Environment Variables](#-environment-variables)  
-11. [Testing](#-testing)  
-12. [Deployment](#-deployment)  
-13. [Contributing](#-contributing)  
-14. [License](#-license)  
+7. [Terraform Module](#-terraform-module)
+8. [Deployment Guide](#-deployment-guide)
+9. [Testing](#-testing)  
 
 ---
 
@@ -132,3 +125,33 @@ infrastructure
     └── README.md
 ```
 ---
+
+## 🚀 Terraform Module
+
+### 1. [VPC Module](https://github.com/jdedios-de/AWS_grocery/tree/version2/infrastructure/modules/vpc)
+#### This Terraform module creates an AWS Virtual Private Cloud (VPC) with a specified CIDR block, along with public and private subnets distributed across availability zones.
+
+### 2. [ALB Module](https://github.com/jdedios-de/AWS_grocery/tree/version2/infrastructure/modules/alb)
+#### This Terraform module creates an AWS Application Load Balancer (ALB) along with associated security groups, internet gateway, route table, listener, and target group.
+
+### 3. [ECS Cluster Module](https://github.com/jdedios-de/AWS_grocery/tree/version2/infrastructure/modules/ecs-cluster)
+#### This Terraform module creates an AWS ECS (Elastic Container Service) cluster with an Auto Scaling Group (ASG), launch template, task definition, service, and an HTTP load balancer listener.
+
+### 4. [RDS Module](https://github.com/jdedios-de/AWS_grocery/tree/version2/infrastructure/modules/rds)
+#### This Terraform module provisions an AWS RDS instance along with a corresponding database subnet group, designed to support managed relational databases for applications such as a grocery service.
+
+### 5. [S3 Module](https://github.com/jdedios-de/AWS_grocery/tree/version2/infrastructure/modules/s3)
+#### This Terraform module creates an AWS S3 bucket with a specified name and an initial folder structure.
+
+---
+
+## 🚀 Deployment Guide
+
+#### 1. cd   infrastructure/environments/dev/
+#### 2. type terraform init
+#### 3. type terraform plan --auto-approve
+#### 4. type terraform deploy --auto-approve
+#### 5. connect to one of the ec2 instance and run the /infrastructure/scripts/sql_dump.sh  
+#### [ The script restore the database schema and data using the SQL dump into RDS PostgreSQL ]
+
+
