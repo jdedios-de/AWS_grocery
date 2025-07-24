@@ -68,6 +68,8 @@ Docker (for local backend builds)
 
 ## 🚀 Terraform Configuration
 
+### [![Watch - Terraform Configuration](https://www.youtube.com/watch?v=lEQGhs9nwvI)](https://www.youtube.com/watch?v=lEQGhs9nwvI)
+
 ```bash
 infrastructure
 ├── scripts
@@ -129,3 +131,4 @@ infrastructure
     ├── iam.tf
     └── README.md
 ```
+---
