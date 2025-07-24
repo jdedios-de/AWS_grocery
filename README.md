@@ -32,6 +32,8 @@ This project is part of the Cloud Track in our Masterschool Software Engineering
 
 ## 🏗 Architecture
 
+### [![Watch - Architecture](https://www.youtube.com/watch?v=SVeOB3N6G3Y&t=5s)](https://www.youtube.com/watch?v=SVeOB3N6G3Y&t=5s)
+
 ![alt text](image-1.png)
 
 ![alt text](image.png)
