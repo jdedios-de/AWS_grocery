@@ -147,6 +147,8 @@ infrastructure
 
 ## 🚀 Deployment Guide
 
+### [![Watch - Deployment Guide](https://www.youtube.com/watch?v=_2fAGX4dATs)](https://www.youtube.com/watch?v=_2fAGX4dATs)
+
 #### 1. cd   infrastructure/environments/dev/
 #### 2. type terraform init
 #### 3. type terraform plan --auto-approve
