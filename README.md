@@ -20,7 +20,7 @@
 6. [Terraform Configuration](#-terraform-configuration)  
 7. [Terraform Module](#-terraform-module)
 8. [Deployment Guide](#-deployment-guide)
-9. [Testing](#-testing)  
+9. [AWS Console Tour and Web Application Demonstration](#-aws-console-tour-and-web-application-demonstration)  
 
 ---
 
@@ -158,4 +158,8 @@ infrastructure
 #### 5. connect to one of the ec2 instance and run the /infrastructure/scripts/sql_dump.sh  
 #### [ The script restore the database schema and data using the SQL dump into RDS PostgreSQL ]
 
+---
 
+## 🚀 AWS Console Tour and Web Application Demonstration
+
+### [![Watch - AWS Console Tour and Web Application Demonstration](https://www.youtube.com/watch?v=uSTBkFrgo8o&t=198s)](https://www.youtube.com/watch?v=uSTBkFrgo8o&t=198s)
