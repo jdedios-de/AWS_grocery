@@ -13,14 +13,13 @@
 ## 📖 Table of Contents
 
 1. [Overview](#%EF%B8%8F-overview)  
-2. [Architecture](#-architecture)  
-3. [Repository Structure](#-repository-structure)  
-4. [Prerequisites](#-prerequisites)  
-5. [Getting Started](#-getting-started)
-6. [Terraform Configuration](#-terraform-configuration)  
-7. [Terraform Module](#-terraform-module)
-8. [Deployment Guide](#-deployment-guide)
-9. [AWS Console Tour and Web Application Demonstration](#-aws-console-tour-and-web-application-demonstration)  
+2. [Architecture](#-architecture)
+3. [Prerequisites](#-prerequisites)
+4. [Getting Started](#-getting-started)
+5. [Terraform Configuration](#-terraform-configuration)
+6. [Terraform Module](#-terraform-module)
+7. [Deployment Guide](#-deployment-guide)
+8. [AWS Console Tour and Web Application Demonstration](#-aws-console-tour-and-web-application-demonstration)  
 
 ---
 
