@@ -7,7 +7,8 @@
 > Terraform-managed AWS infrastructure for the Grocery App  
 > Includes backend API and frontend web app
 
-### [![Watch - Introduction](https://www.youtube.com/watch?v=inNKmnGBUtw)](https://www.youtube.com/watch?v=inNKmnGBUtw)
+### 🎥 [Watch - Introduction](https://www.youtube.com/watch?v=inNKmnGBUtw)
+
 ---
 
 ## 📖 Table of Contents
@@ -31,7 +32,7 @@ This project is part of the Cloud Track in our Masterschool Software Engineering
 
 ## 🏗 Architecture
 
-### [![Watch - Architecture](https://www.youtube.com/watch?v=SVeOB3N6G3Y&t=5s)](https://www.youtube.com/watch?v=SVeOB3N6G3Y&t=5s)
+### 🎥 [Watch - Architecture](https://www.youtube.com/watch?v=SVeOB3N6G3Y&t=5s)
 
 ![alt text](image-1.png)
 
@@ -46,7 +47,7 @@ AWS CLI
 
 Docker (for local backend builds)
 
-### [![Watch - Prerequisites](https://www.youtube.com/watch?v=Radpgqt2tQQ)](https://www.youtube.com/watch?v=Radpgqt2tQQ)
+### 🎥 [Watch - Prerequisites](https://www.youtube.com/watch?v=Radpgqt2tQQ)
 
 ---
 ## 🚀 Getting Started
@@ -56,13 +57,12 @@ Docker (for local backend builds)
 3. Configure AWS credentials
 4. Set up Docker with ECR
 
-### [![Watch - Getting Started](https://www.youtube.com/watch?v=ALv_n0ZYWls)](https://www.youtube.com/watch?v=ALv_n0ZYWls)
-
+### 🎥 [Watch - Getting Started](https://www.youtube.com/watch?v=ALv_n0ZYWls)
 ---
 
 ## 🚀 Terraform Configuration
 
-### [![Watch - Terraform Configuration](https://www.youtube.com/watch?v=lEQGhs9nwvI)](https://www.youtube.com/watch?v=lEQGhs9nwvI)
+### 🎥 [Watch - Terraform Configuration](https://www.youtube.com/watch?v=lEQGhs9nwvI)
 
 ```bash
 infrastructure
@@ -148,7 +148,7 @@ infrastructure
 
 ## 🚀 Deployment Guide
 
-### [![Watch - Deployment Guide](https://www.youtube.com/watch?v=_2fAGX4dATs)](https://www.youtube.com/watch?v=_2fAGX4dATs)
+### 🎥 [Watch - Deployment Guide](https://www.youtube.com/watch?v=_2fAGX4dATs)
 
 #### 1. cd   infrastructure/environments/dev/
 #### 2. type terraform init
@@ -161,4 +161,5 @@ infrastructure
 
 ## 🚀 AWS Console Tour and Web Application Demonstration
 
-### [![Watch - AWS Console Tour and Web Application Demonstration](https://www.youtube.com/watch?v=uSTBkFrgo8o&t=198s)](https://www.youtube.com/watch?v=uSTBkFrgo8o&t=198s)
+### 🎥 [Watch - AWS Console Tour and Web Application Demonstration](https://www.youtube.com/watch?v=uSTBkFrgo8o&t=198s)
+
